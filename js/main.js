@@ -1,8 +1,3 @@
-//Query Selectors
-
-//Event Listeners
-//btn.addEventListener("click", getNum);
-
 document.addEventListener("DOMContentLoaded", function(event) {
     let url = "js/forecast.php"
     let data = {
@@ -10,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         mode: 'cors'
     }
     
-//    let foreCastRequest = new Request ("js/forecast.php", {method: 'post', mode: 'cors'});
+// let foreCastRequest = new Request ("js/forecast.php", {method: 'post', mode: 'cors'});
    let foreCastReq = new Request(url, data);
     fetch(foreCastReq)
         .then(function(response){
@@ -28,9 +23,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 let li = document.createElement("li");
                 li.innerHTML = moment(item.time).format('LT').local;
                 ul.appendChild(li);
-                //hi
-                //hello
-                //that was kina werid
             })
         });
   });
