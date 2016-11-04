@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 ul.appendChild(li);
                 //hi
                 //hello
+                //that was kina werid
             })
         });
   });
